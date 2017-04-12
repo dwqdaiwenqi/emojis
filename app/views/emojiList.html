@@ -1,0 +1,6 @@
+<h1>Emoji List</h1>
+
+<!-- <img ng-repeat = "emoji in vm.emojis" ng-src="{{emoji}}"/> -->
+<ul>
+    <li ng-repeat="(key, emoji) in vm.emojis"><a ui-sref = "emojiDetails({emoji: emoji, id:key})">{{key}} </a></li>
+</ul>
